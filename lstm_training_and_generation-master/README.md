@@ -74,37 +74,3 @@ Once the model is ready, you'll just need to point to it in your ml5 sketch:
 ```javascript
 const lstm = new ml5.LSTMGenerator('./models/your_new_model');
 ```
-That's it!
-
-## More resources
-
-https://ml5js.org/docs/LSTMGenerator
-
-## Hyperparameters
-
-Given the size of the training dataset, here are some hyperparameters that might work:
-
-* 2 MB: 
-   - rnn_size 256 (or 128) 
-   - layers 2 
-   - seq_length 64 
-   - batch_size 32 
-   - dropout 0.25
-* 5-8 MB: 
-  - rnn_size 512 
-  - layers 2 (or 3) 
-  - seq_length 128 
-  - batch_size 64 
-  - dropout 0.25
-* 10-20 MB: 
-  - rnn_size 1024 
-  - layers 2 (or 3) 
-  - seq_length 128 (or 256) 
-  - batch_size 128 
-  - dropout 0.25
-* 25+ MB: 
-  - rnn_size 2048 
-  - layers 2 (or 3) 
-  - seq_length 256 (or 128) 
-  - batch_size 128 
-  - dropout 0.25
