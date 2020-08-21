@@ -57,36 +57,3 @@ note_file.close()
 
 
 
-
-
-#--------------------------------------------------------------------------
-
-		# #create array of notes
-		#
-		# notes = []
-		# for message in mid.tracks[1]: #righthand notes-only
-		#     #print message
-		#     if message.type == 'note_on':
-		#         message_components = str(message).split(' ')
-		#
-		# 	    for item in message_components:
-		#             if 'note=' in item:
-		#                 notes.append(item.split('note=')[1])
-		#
-		# 		for item in message_components:
-        #     		if 'time=' in item:
-        #         		time = item.split('time=')[1]
-		#
-		# 	if note != "":
-        # 		notes.append(str(note + "_" + time))
-		#
-		#
-		# notes = ' '.join(notes)
-		#
-		# print notes
-
-
-		# #write notes to text file
-		# note_file = open("../miditext/notes.txt", "w")
-		# note_file.write(notes)
-		# note_file.close()
